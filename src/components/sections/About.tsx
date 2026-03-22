@@ -21,20 +21,21 @@ const history = [
 
 export const About = memo(() => {
   return (
-    <section className="py-24 px-6 relative z-10 w-full bg-[#030303] border-t border-white/5" id="about">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
+    <section className="py-32 px-6 relative z-10 w-full bg-[#030303] border-t border-white/5" id="about">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-20">
         <motion.div 
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-10%" }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="flex-1"
         >
           <div className="relative group gpu">
-            <div className="absolute -inset-1 bg-gradient-to-r from-[#00f0ff] to-[#7000ff] rounded-2xl blur opacity-20 group-hover:opacity-40 transition-opacity duration-1000" />
-            <div className="relative glass p-10 rounded-2xl border border-white/10">
-              <h2 className="text-4xl font-bold font-heading mb-6 text-white">
-                Pioneering <span className="text-gradient">Innovation</span>
+            <div className="absolute -inset-1 bg-gradient-to-r from-[#00f0ff] to-[#7000ff] rounded-[2rem] blur opacity-10 group-hover:opacity-30 transition-opacity duration-1000" />
+            <div className="relative glass p-12 md:p-16 rounded-[2rem] border border-white/5 shadow-2xl">
+              <span className="text-xs font-bold tracking-[0.2em] uppercase text-gray-500 mb-6 block">Our Vision</span>
+              <h2 className="text-5xl md:text-6xl font-bold font-heading mb-8 text-white tracking-tighter leading-tight">
+                Pioneering <br/><span className="text-gradient">Innovation</span>
               </h2>
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
                 At Nova Tech Africa, we don't just build software. We architect scalable solutions that empower startups and enterprises across the globe to achieve unprecedented growth.

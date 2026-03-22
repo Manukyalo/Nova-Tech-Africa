@@ -19,6 +19,8 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
   overflow-x: hidden;
+}
+
 @utility glass {
   background: rgba(5, 5, 5, 0.4);
   backdrop-filter: blur(16px);
