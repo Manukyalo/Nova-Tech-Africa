@@ -31,28 +31,27 @@ function useIsMobile() {
 function AICore({ isMobile }: { isMobile: boolean }) {
   const meshRef = useRef<THREE.Mesh>(null);
   
-  // Use lower segments on mobile
-  const segments = isMobile ? 16 : 32;
+  // Ultra-low geometry for extreme performance
+  const segments = isMobile ? 12 : 24;
 
   useFrame((state) => {
     if (meshRef.current) {
-      meshRef.current.rotation.x = state.clock.getElapsedTime() * 0.05;
-      meshRef.current.rotation.y = state.clock.getElapsedTime() * 0.08;
+      meshRef.current.rotation.x = state.clock.getElapsedTime() * 0.03;
+      meshRef.current.rotation.y = state.clock.getElapsedTime() * 0.05;
     }
   });
 
   return (
-    <Float speed={1} rotationIntensity={0.5} floatIntensity={0.5}>
+    <Float speed={0.5} rotationIntensity={0.2} floatIntensity={0.2}>
       <Sphere ref={meshRef} args={[1.5, segments, segments]}>
         <MeshDistortMaterial
-          color="#101010"
+          color="#050505"
           emissive="#7000ff"
-          emissiveIntensity={1}
-          clearcoat={0.3}
-          metalness={0.9}
-          roughness={0.2}
-          distort={isMobile ? 0.2 : 0.35}
-          speed={1.5}
+          emissiveIntensity={0.8}
+          metalness={0.8}
+          roughness={0.4}
+          distort={isMobile ? 0.1 : 0.2}
+          speed={isMobile ? 0.5 : 1}
         />
       </Sphere>
     </Float>
@@ -67,7 +66,7 @@ function SceneContent({ isMobile }: { isMobile: boolean }) {
     gl.setPixelRatio(Math.min(window.devicePixelRatio, isMobile ? 1 : 1.5));
   }, [gl, isMobile]);
 
-  const sparklesCount = isMobile ? 20 : 80;
+  const sparklesCount = isMobile ? 0 : 20;
 
   return (
     <>
@@ -77,14 +76,16 @@ function SceneContent({ isMobile }: { isMobile: boolean }) {
       
       <AICore isMobile={isMobile} />
       
-      <Sparkles 
-        count={sparklesCount} 
-        scale={8} 
-        size={2} 
-        speed={0.2} 
-        opacity={0.3} 
-        color="#00f0ff" 
-      />
+      {sparklesCount > 0 && (
+        <Sparkles 
+          count={sparklesCount} 
+          scale={8} 
+          size={1.5} 
+          speed={0.1} 
+          opacity={0.3} 
+          color="#00f0ff" 
+        />
+      )}
 
       <Suspense fallback={null}>
         <Environment preset="night" />

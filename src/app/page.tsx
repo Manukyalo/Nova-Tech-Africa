@@ -10,9 +10,6 @@ import { Footer } from "@/components/layout/Footer";
 export default function Home() {
   return (
     <main className="relative min-h-screen w-full flex flex-col overflow-x-hidden bg-[#050505]">
-      {/* Global Grain/Noise Overlay for Cinematic Feel */}
-      <div className="fixed inset-0 z-50 noise pointer-events-none" />
-
       {/* 3D Background - Loaded dynamically to prioritize LCP */}
       <HeroScene />
       
