@@ -14,11 +14,11 @@ const TechBadge = memo(({ tech, index }: { tech: string; index: number }) => (
     initial={{ opacity: 0, scale: 0.9, y: 10 }}
     whileInView={{ opacity: 1, scale: 1, y: 0 }}
     viewport={{ once: true }}
-    transition={{ duration: 0.3, delay: index * 0.03 }}
+    transition={{ duration: 0.5, delay: index * 0.02, ease: [0.22, 1, 0.36, 1] }}
     whileHover={{ y: -3, scale: 1.05 }}
-    className="glass px-8 py-4 rounded-xl border border-white/10 hover:border-[#7000ff]/50 hover:shadow-[0_0_30px_rgba(112,0,255,0.15)] transition-all cursor-default bg-black/40 backdrop-blur-md gpu"
+    className="px-6 py-2.5 rounded-full border border-white/10 hover:border-[#7000ff]/40 hover:bg-white/5 transition-all cursor-default bg-black/40 backdrop-blur-xl shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] gpu"
   >
-    <span className="text-lg font-medium text-gray-200 tracking-wide">{tech}</span>
+    <span className="text-sm font-medium text-gray-300 tracking-wider hover:text-white transition-colors">{tech}</span>
   </motion.div>
 ));
 
