@@ -1,16 +1,10 @@
-import dynamic from "next/dynamic";
+import { HeroSceneDynamic as HeroScene } from "@/components/3d/HeroSceneDynamic";
 import { Services } from "@/components/sections/Services";
 import { About } from "@/components/sections/About";
 import { Portfolio } from "@/components/sections/Portfolio";
 import { TechStack } from "@/components/sections/TechStack";
 import { Contact } from "@/components/sections/Contact";
 import { Footer } from "@/components/layout/Footer";
-
-// Aggressive performance: Load 3D scene only on client, non-blocking
-const HeroScene = dynamic(() => import("@/components/3d/HeroScene").then(mod => mod.HeroScene), {
-  ssr: false,
-  loading: () => <div className="absolute inset-0 bg-[#050505]" />
-});
 
 export default function Home() {
   return (
