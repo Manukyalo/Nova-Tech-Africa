@@ -73,7 +73,7 @@ export function Footer() {
   return (
     <footer className="bg-[#03000A] border-t border-white/[0.05] pt-20 pb-10 px-6 relative z-10">
       {/* Subtle top gradient glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-px bg-gradient-to-r from-transparent via-[#00FFB2]/30 to-transparent" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-px bg-gradient-to-r from-transparent via-[#6366F1]/30 to-transparent" />
 
       <div className="max-w-7xl mx-auto">
         {/* 4-column grid */}
@@ -108,7 +108,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={s.label}
-                  className="w-9 h-9 rounded-xl bg-white/[0.03] border border-white/[0.08] flex items-center justify-center text-[#8888AA] hover:text-[#00FFB2] hover:border-[#00FFB2]/30 transition-all duration-300"
+                  className="w-9 h-9 rounded-xl bg-white/[0.03] border border-white/[0.08] flex items-center justify-center text-[#8888AA] hover:text-[#6366F1] hover:border-[#6366F1]/30 transition-all duration-300"
                 >
                   <s.icon className="w-4 h-4" />
                 </a>
@@ -180,9 +180,9 @@ export function Footer() {
               <motion.div
                 initial={{ opacity: 0, y: 8 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="glass rounded-xl p-4 border border-[#00FFB2]/20 text-center"
+                className="glass rounded-xl p-4 border border-[#6366F1]/20 text-center"
               >
-                <span className="text-[13px] text-[#00FFB2] font-medium">
+                <span className="text-[13px] text-[#6366F1] font-medium">
                   ✓ You&apos;re subscribed!
                 </span>
               </motion.div>
@@ -197,12 +197,12 @@ export function Footer() {
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="your@email.com"
                     required
-                    className="w-full bg-white/[0.04] border border-white/[0.1] focus:border-[#00FFB2]/40 rounded-xl px-4 py-3 text-[13px] text-[#F0F0FF] placeholder:text-[#8888AA] outline-none transition-colors duration-300"
+                    className="w-full bg-white/[0.04] border border-white/[0.1] focus:border-[#6366F1]/40 rounded-xl px-4 py-3 text-[13px] text-[#F0F0FF] placeholder:text-[#8888AA] outline-none transition-colors duration-300"
                   />
                 </div>
                 <button
                   type="submit"
-                  className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-[#00FFB2] text-[#03000A] font-bold text-[12px] tracking-widest uppercase rounded-xl hover:bg-[#F0F0FF] transition-all duration-300"
+                  className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-[#6366F1] text-white font-bold text-[12px] tracking-widest uppercase rounded-xl hover:bg-[#F0F0FF] hover:text-[#03000A] transition-all duration-300"
                 >
                   Subscribe <ArrowRight className="w-3.5 h-3.5" />
                 </button>

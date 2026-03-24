@@ -170,7 +170,7 @@ export function Navbar() {
               className="fixed top-0 right-0 bottom-0 w-full max-w-sm z-50 bg-[#03000A] border-l border-white/[0.06] flex flex-col px-8 pt-24 pb-10 md:hidden"
             >
               {/* Ambient glows */}
-              <div className="absolute top-1/4 -left-16 w-48 h-48 rounded-full bg-[#00FFB2]/8 blur-3xl pointer-events-none" />
+              <div className="absolute top-1/4 -left-16 w-48 h-48 rounded-full bg-[#6366F1]/8 blur-3xl pointer-events-none" />
               <div className="absolute bottom-1/4 -right-8 w-48 h-48 rounded-full bg-[#7B61FF]/8 blur-3xl pointer-events-none" />
 
               {/* Nav links */}
@@ -226,7 +226,7 @@ export function Navbar() {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={s.label}
-                      className="w-9 h-9 rounded-xl bg-white/[0.03] border border-white/[0.08] flex items-center justify-center text-[#8888AA] hover:text-[#00FFB2] hover:border-[#00FFB2]/30 transition-all duration-300"
+                      className="w-9 h-9 rounded-xl bg-white/[0.03] border border-white/[0.08] flex items-center justify-center text-[#8888AA] hover:text-[#6366F1] hover:border-[#6366F1]/30 transition-all duration-300"
                     >
                       <s.icon className="w-4 h-4" />
                     </a>
@@ -236,7 +236,7 @@ export function Navbar() {
                 <Link
                   href="/contact"
                   onClick={close}
-                  className="w-full flex items-center justify-center gap-2 py-4 rounded-2xl bg-gradient-to-r from-[#00FFB2] to-[#7B61FF] text-[#03000A] font-bold text-[13px] tracking-widest uppercase hover:opacity-90 transition-opacity duration-300"
+                  className="w-full flex items-center justify-center gap-2 py-4 rounded-2xl bg-gradient-to-r from-[#6366F1] to-[#4F46E5] text-white font-bold text-[13px] tracking-widest uppercase hover:opacity-90 transition-opacity duration-300"
                 >
                   Start a Project →
                 </Link>
