@@ -13,6 +13,7 @@ const CASE_STUDIES = {
     results: ["34% Overhead Reduction", "99.97% System Uptime", "6 Countries Consolidated"],
     stack: ["Next.js", "PostgreSQL", "AWS", "Docker", "Redis"],
     accent: "#00FFB2",
+    liveUrl: undefined as string | undefined,
   },
   "aura-pay": {
     title: "Aura Pay",
@@ -23,6 +24,7 @@ const CASE_STUDIES = {
     results: ["$12M+ Volume (Q1)", "67% Fraud Reduction", "99.2% Accuracy"],
     stack: ["Python", "TensorFlow", "React", "Node.js", "Kubernetes"],
     accent: "#7B61FF",
+    liveUrl: undefined as string | undefined,
   },
   "lumina-health": {
     title: "Lumina Health",
@@ -33,7 +35,19 @@ const CASE_STUDIES = {
     results: ["10k+ Clinicians Connected", "40% Admin Time Cut", "0 Security Breaches"],
     stack: ["Flutter", "Firebase", "GraphQL", "TypeScript"],
     accent: "#FF6B35",
-  }
+    liveUrl: undefined as string | undefined,
+  },
+  "eastern-vacations-ems": {
+    title: "Eastern Vacations EMS",
+    category: "TravelTech",
+    overview: "Eastern Vacations & Safaris Kenya — a Mombasa-based tour and safari operator — needed to replace their manual, spreadsheet-driven workflow with a centralised digital management system capable of handling reservations, scheduling, and admin operations across their entire business.",
+    challenge: "Their reservations team and admin department were working in silos: booking data was scattered across spreadsheets and WhatsApp messages, leading to double-bookings, missed follow-ups, and slow client response times — a serious problem in hospitality where speed of response directly impacts revenue.",
+    solution: "We built a full Enterprise Management System with two purpose-built portal experiences: a Reservations Portal for the bookings team (safari scheduling, client itinerary generation, payment tracking) and a secure Admin Portal (operational reporting, user management, fleet visibility). The system is a Progressive Web App — installable on any device — with dark mode, role-based access control, and a branded UI in Eastern Vacations' signature safari gold palette.",
+    results: ["Booking Errors Eliminated", "Admin & Reservations Unified", "PWA — Works on Any Device"],
+    stack: ["React", "Vite", "Firebase", "Tailwind CSS", "Vercel"],
+    accent: "#F5A623",
+    liveUrl: "https://eastern-vacations-system.vercel.app/",
+  },
 };
 
 export default function CaseStudyPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -41,7 +55,16 @@ export default function CaseStudyPage({ params }: { params: Promise<{ slug: stri
   const slug = resolvedParams.slug;
   const study = CASE_STUDIES[slug as keyof typeof CASE_STUDIES];
 
-  if (!study) return <div>Not Found</div>;
+  if (!study) return (
+    <main className="min-h-screen pt-40 pb-20 px-6 bg-[#03000A] flex flex-col items-center justify-center text-center">
+      <span className="font-mono text-[11px] tracking-[0.3em] uppercase text-[#8888AA] mb-4 block">404</span>
+      <h1 className="text-5xl font-bold text-[#F0F0FF] tracking-tighter mb-4">Case Study Not Found</h1>
+      <p className="text-[#8888AA] mb-10">This project may be under NDA or the link is incorrect.</p>
+      <Link href="/#work" className="inline-flex items-center gap-2 px-8 py-3 rounded-full border border-white/[0.12] text-[#8888AA] hover:text-[#00FFB2] hover:border-[#00FFB2]/30 transition-all duration-300">
+        ← Back to Work
+      </Link>
+    </main>
+  );
 
   return (
     <main className="min-h-screen pt-32 pb-20 px-6 bg-[#03000A]">
@@ -110,12 +133,25 @@ export default function CaseStudyPage({ params }: { params: Promise<{ slug: stri
 
         <div className="mt-20 pt-20 border-t border-white/[0.05] text-center">
           <h3 className="text-3xl font-bold text-[#F0F0FF] mb-8">Ready for similar results?</h3>
-          <Link 
-            href="/contact" 
-            className="inline-flex items-center gap-2 px-10 py-4 rounded-full bg-gradient-to-r from-[#00FFB2] to-[#7B61FF] text-[#03000A] font-bold text-sm tracking-widest uppercase hover:shadow-[0_0_30px_rgba(0,255,178,0.3)] transition-all duration-500"
-          >
-            Let&apos;s talk <ArrowUpRight className="w-4 h-4" />
-          </Link>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Link 
+              href="/contact" 
+              className="inline-flex items-center gap-2 px-10 py-4 rounded-full bg-gradient-to-r from-[#00FFB2] to-[#7B61FF] text-[#03000A] font-bold text-sm tracking-widest uppercase hover:shadow-[0_0_30px_rgba(0,255,178,0.3)] transition-all duration-500"
+            >
+              Let&apos;s talk <ArrowUpRight className="w-4 h-4" />
+            </Link>
+            {study.liveUrl && (
+              <a
+                href={study.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-10 py-4 rounded-full border text-sm font-bold tracking-widest uppercase transition-all duration-300"
+                style={{ borderColor: `${study.accent}50`, color: study.accent }}
+              >
+                View Live Site <ArrowUpRight className="w-4 h-4" />
+              </a>
+            )}
+          </div>
         </div>
       </div>
     </main>
