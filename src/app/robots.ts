@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://novatechafrica.com/sitemap.xml',
+    sitemap: 'https://axelo.io/sitemap.xml',
   }
 }
