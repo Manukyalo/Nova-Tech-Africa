@@ -37,14 +37,14 @@ const testimonials = [
   {
     id: 3,
     quote:
-      "The Lumina Health platform connected our 10,000+ provider network seamlessly. What impressed us most was how the team handled offline-first architecture for clinics in rural areas — something no other vendor had even considered.",
-    name: "Dr. Priya Mehta",
-    role: "Product Lead",
-    company: "Lumina Health",
-    country: "South Africa 🇿🇦",
-    initials: "PM",
-    accent: "#FF6B35",
-    gradient: "from-[#FF6B35] to-[#00FFB2]",
+      "Nova Tech Africa built us an Enterprise Management System that completely transformed how we run Eastern Vacations. Our reservations team and admin department now work from a single unified platform — booking errors are down, response times are faster, and our safari scheduling is seamless. They understood our travel business from day one and delivered exactly what we needed.",
+    name: "James Myovi",
+    role: "Director",
+    company: "Eastern Vacations & Safaris Kenya",
+    country: "Kenya 🇰🇪",
+    initials: "JM",
+    accent: "#F5A623",
+    gradient: "from-[#F5A623] to-[#00FFB2]",
   },
 ];
 

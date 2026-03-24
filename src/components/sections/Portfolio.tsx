@@ -28,15 +28,16 @@ const caseStudies = [
     gradient: "from-[#7B61FF]/10 via-[#FF6B35]/5 to-transparent",
   },
   {
-    id: "lumina-health",
-    title: "Lumina Health",
-    industry: ["HealthTech", "SaaS"],
+    id: "eastern-vacations-ems",
+    title: "Eastern Vacations EMS",
+    industry: ["TravelTech", "Enterprise"],
     result:
-      "Connected 10,000+ healthcare providers across East Africa with a real-time patient management platform, cutting admin time by 40%.",
-    stack: ["Flutter", "Firebase", "GraphQL", "TypeScript"],
-    accent: "#FF6B35",
-    year: "2024",
-    gradient: "from-[#FF6B35]/10 via-[#00FFB2]/5 to-transparent",
+      "Custom Enterprise Management System for Eastern Vacations & Safaris Kenya — a Mombasa-based tour operator. Unified Admin and Reservations portals replaced manual spreadsheets, cutting booking errors and improving response times across safari & holiday scheduling.",
+    stack: ["React", "Vite", "Firebase", "Tailwind CSS", "Vercel"],
+    accent: "#F5A623",
+    year: "2025",
+    gradient: "from-[#F5A623]/10 via-[#00FFB2]/5 to-transparent",
+    liveUrl: "https://eastern-vacations-system.vercel.app/",
   },
 ];
 
@@ -193,17 +194,29 @@ const CaseStudyCard = memo(
         >
           Read Case Study
         </a>
-        <div className="relative group/nda flex-1">
-          <button
-            disabled
-            className="w-full px-6 py-3 rounded-xl bg-white/[0.02] border border-white/[0.05] text-[#8888AA]/50 text-[13px] font-semibold cursor-not-allowed flex items-center justify-center gap-2"
+        {(study as typeof caseStudies[0] & { liveUrl?: string }).liveUrl ? (
+          <a
+            href={(study as typeof caseStudies[0] & { liveUrl?: string }).liveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1 px-6 py-3 rounded-xl border text-[13px] font-semibold text-center flex items-center justify-center gap-2 transition-all duration-300 hover:opacity-90"
+            style={{ borderColor: `${study.accent}50`, color: study.accent, background: `${study.accent}10` }}
           >
-            🔒 Under NDA
-          </button>
-          <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1.5 bg-[#0D0D1A] border border-white/10 rounded-lg text-[10px] text-[#8888AA] whitespace-nowrap opacity-0 group-hover/nda:opacity-100 transition-opacity pointer-events-none z-20">
-            Client confidentiality agreement in place
+            View Live Site <ArrowUpRight className="w-3.5 h-3.5" />
+          </a>
+        ) : (
+          <div className="relative group/nda flex-1">
+            <button
+              disabled
+              className="w-full px-6 py-3 rounded-xl bg-white/[0.02] border border-white/[0.05] text-[#8888AA]/50 text-[13px] font-semibold cursor-not-allowed flex items-center justify-center gap-2"
+            >
+              🔒 Under NDA
+            </button>
+            <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1.5 bg-[#0D0D1A] border border-white/10 rounded-lg text-[10px] text-[#8888AA] whitespace-nowrap opacity-0 group-hover/nda:opacity-100 transition-opacity pointer-events-none z-20">
+              Client confidentiality agreement in place
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </motion.article>
   )
