@@ -8,7 +8,7 @@ const milestones = [
     year: "2024",
     title: "Global Expansion",
     desc: "Partnered with enterprise clients across 3 continents, delivering cloud-native platforms handling millions of daily transactions.",
-    accent: "#00FFB2",
+    accent: "#6366F1",
   },
   {
     year: "2025",
@@ -25,7 +25,7 @@ const milestones = [
 ];
 
 const stats = [
-  { value: "20+", label: "Engineers & Designers", accent: "#00FFB2" },
+  { value: "20+", label: "Engineers & Designers", accent: "#6366F1" },
   { value: "5", label: "Countries Served", accent: "#7B61FF" },
   { value: "50+", label: "Enterprise Projects", accent: "#FF6B35" },
   { value: "98%", label: "Client Retention", accent: "#00FFB2" },
