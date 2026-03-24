@@ -72,7 +72,7 @@ const jsonLd = {
       "@id": "https://axelo.io/#organization",
       name: "Axelo",
       url: "https://axelo.io",
-      logo: "https://axelo.io/logo.png",
+      logo: "https://getaxelo.vercel.app/logo.png",
       description: "High-performance software engineering and AI studio in Nairobi, Kenya",
       address: {
         "@type": "PostalAddress",
