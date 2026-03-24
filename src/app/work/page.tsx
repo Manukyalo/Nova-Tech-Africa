@@ -17,7 +17,7 @@ const PROJECTS = [
     outcome: "A premium car rental and management platform for a high-end fleet in Kenya. Features real-time booking and fleet tracking.",
     tags: ["Next.js", "Firebase", "Tailwind"],
     accent: "#00FFB2",
-    year: "2025",
+    year: "2026",
   },
   {
     slug: "hope-counseling",
@@ -35,7 +35,7 @@ const PROJECTS = [
     outcome: "Custom Enterprise Management System unified Admin and Reservations portals, cutting booking errors for a major tour operator.",
     tags: ["React", "Firebase", "Vercel"],
     accent: "#F5A623",
-    year: "2025",
+    year: "2026",
   },
 ];
 
