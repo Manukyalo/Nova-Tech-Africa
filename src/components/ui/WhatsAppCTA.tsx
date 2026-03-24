@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const WA_LINK =
-  "https://wa.me/254700000000?text=Hi%20Nova%20Tech%20Africa%2C%20I%27d%20like%20to%20discuss%20a%20project";
+  "https://wa.me/254700000000?text=Hi%20Axelo%2C%20I%27d%20like%20to%20discuss%20a%20project";
 
 function WhatsAppIcon({ size = 28 }: { size?: number }) {
   return (
@@ -109,7 +109,7 @@ export function WhatsAppCTA() {
             cursor: "pointer",
           }}
           className="hover:shadow-[0_6px_30px_rgba(37,211,102,0.65)] transition-shadow duration-300"
-          aria-label="Chat with Nova Tech Africa on WhatsApp"
+          aria-label="Chat with Axelo on WhatsApp"
         >
           <WhatsAppIcon size={isMobile ? 24 : 28} />
         </motion.a>

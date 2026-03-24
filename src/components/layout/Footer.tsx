@@ -28,27 +28,27 @@ const services = [
 const socials = [
   {
     icon: Twitter,
-    href: "https://twitter.com/novatechafrica",
+    href: "https://twitter.com/axeloHQ",
     label: "Twitter / X",
     hoverColor: "#1DA1F2",
   },
   {
     icon: Linkedin,
-    href: "https://linkedin.com/company/novatechafrica",
+    href: "https://linkedin.com/company/axelo",
     label: "LinkedIn",
     hoverColor: "#0A66C2",
   },
   {
     icon: Github,
-    href: "https://github.com/novatechafrica",
+    href: "https://github.com/axelo",
     label: "GitHub",
     hoverColor: "#F0F0FF",
   },
   {
     icon: Mail,
-    href: "mailto:hello@novatechafrica.com",
+    href: "mailto:hello@axelo.io",
     label: "Email",
-    hoverColor: "#00FFB2",
+    hoverColor: "#6366F1",
   },
 ];
 
@@ -80,24 +80,24 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
           {/* Column 1 — Brand */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-3 mb-5 group" aria-label="Nova Tech Africa Home">
+            <Link href="/" className="flex items-center gap-3 mb-5 group" aria-label="Axelo Home">
               <div className="relative w-10 h-10 flex-shrink-0 group-hover:scale-105 transition-transform duration-500">
                 <Image 
                   src="/icon.png" 
-                  alt="Nova Tech Africa Logo" 
+                  alt="Axelo Logo" 
                   width={40} 
                   height={40}
                   className="relative z-10"
                 />
-                <div className="absolute inset-0 rounded-full bg-[#00FFB2]/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 rounded-full bg-[#6366F1]/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
-              <span className="text-sm font-bold tracking-[0.15em] uppercase text-[#F0F0FF] leading-tight">
-                Nova Tech<br /><span className="text-[#00FFB2]">Africa</span>
+              <span className="text-xl font-bold tracking-[0.1em] uppercase text-[#F0F0FF] leading-tight">
+                Axelo
               </span>
             </Link>
 
             <p className="text-[#8888AA] text-[13px] leading-relaxed mb-6 max-w-[240px]">
-              Building Africa&apos;s Digital Future — one exceptional product at a time.
+              Accelerating What&apos;s Next — Engineering high-performance digital infrastructure for the global stage.
             </p>
 
             <div className="flex gap-3 mb-6">
@@ -116,11 +116,11 @@ export function Footer() {
             </div>
 
             <a
-              href="mailto:hello@novatechafrica.com"
+              href="mailto:hello@axelo.io"
               className="text-[12px] font-mono text-[#8888AA] hover:text-[#00FFB2] transition-colors duration-300 flex items-center gap-1.5"
             >
               <Mail className="w-3 h-3" />
-              hello@novatechafrica.com
+              hello@axelo.io
             </a>
           </div>
 
@@ -217,7 +217,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/[0.05] flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-[11px] font-mono text-[#8888AA]/60">
-            © 2026 Nova Tech Africa Ltd. Registered in Nairobi, Kenya.
+            © 2026 Axelo Ltd. Registered in Nairobi, Kenya.
           </p>
           <div className="flex items-center gap-4">
             {legalLinks.map((l, i) => (

@@ -46,13 +46,13 @@ export default function AboutPage() {
             transition={{ duration: 0.8 }}
             className="max-w-4xl"
           >
-            <span className="font-mono text-[11px] tracking-[0.28em] uppercase text-[#00FFB2] mb-6 block">Our Story</span>
+            <span className="font-mono text-[11px] tracking-[0.28em] uppercase text-[#6366F1] mb-6 block">Our Story</span>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tighter mb-8 leading-[1.1]">
               Engineered in Nairobi, <br />
               <span className="text-gradient-full">Built for the World.</span>
             </h1>
             <p className="text-[#8888AA] text-lg md:text-xl leading-relaxed max-w-2xl mb-12">
-              Nova Tech Africa is a premium software engineering and AI studio. We transform ambitious ideas into market-leading products that scale seamlessly across Africa and beyond.
+              Axelo is a premium software engineering and AI studio. We transform ambitious ideas into market-leading products that scale seamlessly for global enterprises.
             </p>
           </motion.div>
 

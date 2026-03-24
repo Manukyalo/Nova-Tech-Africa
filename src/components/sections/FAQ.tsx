@@ -30,12 +30,12 @@ const faqs = [
     a: "We offer retainer-based maintenance packages covering bug fixes, performance monitoring, security patches, and feature iterations. Most clients stay on a monthly retainer post-launch.",
   },
   {
-    q: "How do I start a project with Nova Tech Africa?",
+    q: "How do I start a project with Axelo?",
     a: "Fill out our project intake form on the contact page. We respond within 24 hours to schedule a free 30-minute discovery call where we learn about your goals and propose an approach.",
   },
   {
     q: "Do you sign NDAs?",
-    a: "Yes, always. We sign mutual NDAs before any discovery call where sensitive business information is shared. Client confidentiality is a core part of how we operate.",
+    a: "Every Axelo project begins with a 1-week deep dive discovery session where we map your business logic, technical requirements, and ROI goals. We sign mutual NDAs before any sensitive business information is shared. Client confidentiality is a core part of how we operate.",
   },
 ];
 

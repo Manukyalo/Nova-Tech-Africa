@@ -23,9 +23,9 @@ const desktopLinks = [
 ];
 
 const socials = [
-  { icon: Twitter, href: "https://twitter.com/novatechafrica", label: "Twitter" },
-  { icon: Linkedin, href: "https://linkedin.com/company/novatechafrica", label: "LinkedIn" },
-  { icon: Github, href: "https://github.com/novatechafrica", label: "GitHub" },
+  { icon: Twitter, href: "https://twitter.com/axeloHQ", label: "Twitter" },
+  { icon: Linkedin, href: "https://linkedin.com/company/axelo", label: "LinkedIn" },
+  { icon: Github, href: "https://github.com/axelo", label: "GitHub" },
 ];
 
 export function Navbar() {
@@ -73,21 +73,20 @@ export function Navbar() {
           <Link
             href="/"
             className="flex items-center gap-3 group"
-            aria-label="Nova Tech Africa Home"
+            aria-label="Axelo Home"
           >
             <div className="relative w-10 h-10 flex-shrink-0 group-hover:scale-105 transition-transform duration-500">
               <Image 
                 src="/icon.png" 
-                alt="Nova Tech Africa Logo" 
+                alt="Axelo Logo" 
                 width={40} 
                 height={40}
                 className="relative z-10"
               />
-              <div className="absolute inset-0 rounded-full bg-[#00FFB2]/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute inset-0 rounded-full bg-[#6366F1]/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </div>
-            <span className="text-sm font-bold tracking-[0.15em] uppercase text-[#F0F0FF] leading-tight">
-              Nova Tech<br />
-              <span className="text-[#00FFB2]">Africa</span>
+            <span className="text-xl font-bold tracking-[0.1em] uppercase text-[#F0F0FF] leading-tight">
+              Axelo
             </span>
           </Link>
 
@@ -205,11 +204,11 @@ export function Navbar() {
               >
                 <div className="space-y-1">
                   <a
-                    href="mailto:hello@novatechafrica.com"
+                    href="mailto:hello@axelo.io"
                     className="flex items-center gap-2 text-[13px] font-mono text-[#8888AA] hover:text-[#00FFB2] transition-colors duration-300"
                   >
                     <Mail className="w-3.5 h-3.5" />
-                    hello@novatechafrica.com
+                    hello@axelo.io
                   </a>
                   <a
                     href="tel:+254700000000"

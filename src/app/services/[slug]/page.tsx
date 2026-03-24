@@ -6,11 +6,11 @@ import Link from "next/link";
 const SERVICES_DATA = {
   "web-application-development": {
     title: "Web Application Development",
-    description: "High-performance, scalable web systems built with modern stacks (Next.js, React, Node.js) for the African and global market.",
-    challenge: "Fragmented digital experiences often lead to high churn and lost revenue. African enterprises need systems that work offline-first, load instantly on 3G/4G, and scale to millions.",
-    approach: "We use a modular architecture that prioritizes Core Web Vitals and edge caching. Our engineering focus is on speed, security, and extreme reliability.",
+    description: "High-performance, scalable web systems built with Next.js and TypeScript for global enterprises.",
+    challenge: "Fragmented digital experiences often lead to high churn and lost revenue. Modern enterprises need systems that load instantly, handle peak traffic, and provide a premium user experience.",
+    approach: "We use a modular architecture that prioritizes Core Web Vitals and edge caching. Our engineering focus is on speed, security, and absolute reliability.",
     deliverables: [
-      "Custom React/Next.js Interface",
+      "Custom Next.js Interface",
       "Scalable Node.js/Python API",
       "Real-time Dashboard Analytics",
       "Cloud Architecture (AWS/GCP)",
@@ -21,19 +21,19 @@ const SERVICES_DATA = {
     faq: [
       { q: "How long does a custom web app take?", a: "Most enterprise-grade web applications take 12-16 weeks from discovery to launch." },
       { q: "Do you handle hosting and maintenance?", a: "Yes, we provide fully managed AWS/GCP cloud hosting and 24/7 maintenance SLA." },
-      { q: "Can we migrate our legacy data?", a: "Absolutely. We specialize in complex data migrations from legacy SQL/Sheet systems." },
+      { q: "Can we migrate our legacy data?", a: "Absolutely. We specialize in complex data migrations from legacy SQL systems." },
       { q: "Is the code proprietary to us?", a: "Yes, once the project is completed, you own 100% of the IP and source code." }
     ]
   },
-  "ai-machine-learning-africa": {
+  "ai-machine-learning": {
     title: "AI & Machine Learning",
-    description: "Custom AI solutions for the African market, from fraud detection to predictive supply chain analytics and NLP.",
-    challenge: "Most AI models are trained on Western data, leading to bias and failure in African contexts. We build models that understand local nuances.",
-    approach: "We leverage localized datasets to train high-accuracy models. Our focus is on practical AI that solves real-world business bottlenecks.",
+    description: "Custom AI solutions for complex production environments, from predictive pipelines to large-scale NLP systems.",
+    challenge: "Most AI implementations fail at the production stage due to data drift and scaling issues. We build robust, production-ready AI pipelines.",
+    approach: "We leverage state-of-the-art architectures to train high-accuracy models. Our focus is on practical AI that solves critical business bottlenecks.",
     deliverables: [
       "Custom ML Model Training",
       "Data Pipeline Engineering",
-      "NLP for African Languages",
+      "NLP & Large Language Models",
       "Computer Vision Systems",
       "Predictive Analytics Dashboard",
       "AI Strategy & Ethics Consulting"
@@ -109,25 +109,25 @@ const SERVICES_DATA = {
       { q: "Do you help with App Store reviews?", a: "Yes, we handle the entire submission and approval process for both Apple and Google." }
     ]
   },
-  "brand-motion-design": {
-    title: "Brand & Motion Design",
-    description: "Cinematic visual identities and high-conversion motion graphics for tech-forward companies in Africa.",
-    challenge: "In a crowded market, your brand needs to look 'world-class' to attract premium global partners.",
-    approach: "We mix high-end typography with custom 3D motion graphics to create an identity that feels dangerous and elite.",
+  "immersive-3d-web": {
+    title: "Immersive 3D Experiences",
+    description: "High-performance WebGL and Three.js experiences that redefine how premium brands interact with their global audience.",
+    challenge: "In a crowded digital world, a flat interface isn't enough to capture attention and drive premium conversions.",
+    approach: "We blend high-end typography with custom 3D motion graphics to create an identity that feels dangerous and elite.",
     deliverables: [
-      "Visual Identity & Logomark",
+      "Three.js Interactive Scenes",
       "3D Product Renderings",
-      "Motion Identity System",
-      "UI/UX Design Language",
+      "Motion Identity Systems",
+      "WebGL Shader Development",
       "Marketing Asset Suite",
-      "Brand Guidelines (The Bible)"
+      "Immersive UI/UX Design"
     ],
-    tech: ["Figma", "AfterEffects", "Spline", "Three.js", "Cinema4D", "Adobe CC"],
+    tech: ["Three.js", "Spline", "WebGL", "GSAP", "Framer Motion", "Cinema4D"],
     faq: [
-      { q: "Do you do logos only?", a: "We prefer building full visual identities to ensure consistency across all touchpoints." },
-      { q: "Can you create 3D website assets?", a: "Yes, we specialize in high-performance Three.js and Spline assets for web." },
-      { q: "How long is the design process?", a: "A full brand identity typically takes 4-6 weeks of collaborative iteration." },
-      { q: "Do we get the source files?", a: "Yes, Figma and high-res source files are delivered upon project completion." }
+      { q: "Are 3D websites mobile-friendly?", a: "Yes, we optimize geometries and textures to ensure smooth 60fps performance on modern smartphones." },
+      { q: "Can you create 3D product configurators?", a: "Yes, we specialize in high-performance Three.js configurators for e-commerce." },
+      { q: "How long is the development process?", a: "A custom 3D experience typically takes 6-10 weeks depending on complexity." },
+      { q: "Do we get the source 3D files?", a: "Yes, we deliver all optimized assets and source project files upon completion." }
     ]
   }
 };

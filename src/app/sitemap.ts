@@ -3,15 +3,15 @@ import { getAllPosts } from '@/lib/mdx'
 
 const SERVICE_SLUGS = [
   'web-application-development',
-  'ai-machine-learning-africa',
+  'ai-machine-learning',
   'saas-platform-development',
   'erp-crm-systems',
   'mobile-app-development',
-  'brand-motion-design',
+  'immersive-3d-web',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://novatechafrica.com'
+  const baseUrl = 'https://axelo.io'
   const now = new Date()
 
   // Core pages

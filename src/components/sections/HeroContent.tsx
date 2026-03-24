@@ -38,11 +38,9 @@ const stats = [
 ];
 
 const headlineWords = [
-  { text: "Africa's", className: "text-[#F0F0FF]" },
-  { text: "Most", className: "text-[#F0F0FF]" },
-  { text: "Dangerous", className: "text-gradient-full" },
-  { text: "Engineering", className: "text-[#F0F0FF]" },
-  { text: "Studio.", className: "text-[#F0F0FF]" },
+  { text: "Accelerating", className: "text-[#6366F1]" },
+  { text: "What's", className: "text-[#F0F0FF]" },
+  { text: "Next.", className: "text-gradient-full" },
 ];
 
 const containerVars: Variants = {
@@ -70,8 +68,8 @@ export function HeroContent() {
       <div className="absolute inset-0 hero-grid opacity-100 pointer-events-none" />
 
       {/* Center glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] rounded-full bg-[#00FFB2]/5 blur-[120px] pointer-events-none" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[300px] rounded-full bg-[#7B61FF]/5 blur-[100px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] rounded-full bg-[#6366F1]/5 blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[300px] rounded-full bg-[#6366F1]/5 blur-[100px] pointer-events-none" />
 
       <motion.div
         variants={containerVars}
@@ -84,11 +82,11 @@ export function HeroContent() {
           <div className="relative inline-flex items-center gap-3 px-5 py-2.5 rounded-full border border-white/10 bg-white/[0.03] backdrop-blur-md">
              {/* Pulse dot */}
              <span className="relative flex h-2.5 w-2.5">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00FFB2] opacity-75" />
-              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#00FFB2]" />
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#6366F1] opacity-75" />
+              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#6366F1]" />
             </span>
             <span className="text-[11px] sm:text-xs font-medium tracking-[0.2em] uppercase text-[#F0F0FF]/80 font-mono">
-              Now taking 2 new client projects — Q2 2026
+              Axelo — High Performance Software Studio
             </span>
           </div>
         </motion.div>
@@ -97,7 +95,7 @@ export function HeroContent() {
         <h1
           id="hero-headline"
           className="font-bold leading-[1.0] tracking-tighter mb-8 overflow-hidden"
-          style={{ fontSize: "clamp(52px, 8.5vw, 120px)" }}
+          style={{ fontSize: "clamp(52px, 9.5vw, 140px)" }}
         >
           <motion.div
             variants={containerVars}
@@ -123,9 +121,9 @@ export function HeroContent() {
           variants={itemVars}
           className="text-base sm:text-lg md:text-xl text-[#8888AA] mb-12 max-w-3xl leading-[1.65] font-light"
         >
-          We build the software African enterprises use to compete on a global stage. <br className="hidden md:block" />
-          AI pipelines, SaaS platforms, and web applications engineered for speed, <br className="hidden md:block" />
-          scale, and market dominance — from Nairobi to the world.
+          Axelo builds the high-performance software systems that power the next <br className="hidden md:block" />
+          generation of digital giants. From AI pipelines to SaaS architecture, <br className="hidden md:block" />
+          we engineer for speed, scale, and absolute precision.
         </motion.p>
 
         {/* CTAs */}
@@ -212,7 +210,7 @@ export function HeroContent() {
             >
               <path
                 d="M1 1L8 8L15 1"
-                stroke="#00FFB2"
+                stroke="#6366F1"
                 strokeWidth="1.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"

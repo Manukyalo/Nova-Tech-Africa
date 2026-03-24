@@ -7,8 +7,8 @@ import { ArrowLeft, ArrowRight, Calendar, Clock, Twitter, Linkedin, MessageCircl
 import type { Post, PostMeta } from "@/lib/mdx";
 
 const ACCENT_COLORS: Record<string, string> = {
-  "AI & ML": "#00FFB2",
-  Engineering: "#7B61FF",
+  "AI & ML": "#6366F1",
+  Engineering: "#6366F1",
   Product: "#FF6B35",
 };
 
@@ -38,7 +38,7 @@ const mdxComponents = {
     <strong className="font-semibold text-[#F0F0FF]" {...props} />
   ),
   a: (props: React.AnchorHTMLAttributes<HTMLAnchorElement>) => (
-    <a className="text-[#00FFB2] hover:underline underline-offset-4" {...props} />
+    <a className="text-[#6366F1] hover:underline underline-offset-4" {...props} />
   ),
   hr: () => (
     <hr className="border-white/[0.08] my-10" />
@@ -55,15 +55,15 @@ const mdxComponents = {
     <td className="px-4 py-3 text-[#CCCCDD] border border-white/[0.06]" {...props} />
   ),
   blockquote: (props: React.HTMLAttributes<HTMLQuoteElement>) => (
-    <blockquote className="border-l-4 border-[#00FFB2]/40 pl-5 italic text-[#8888AA] my-6" {...props} />
+    <blockquote className="border-l-4 border-[#6366F1]/40 pl-5 italic text-[#8888AA] my-6" {...props} />
   ),
   code: (props: React.HTMLAttributes<HTMLElement>) => (
-    <code className="bg-white/[0.06] text-[#00FFB2] px-1.5 py-0.5 rounded font-mono text-[13px]" {...props} />
+    <code className="bg-white/[0.06] text-[#6366F1] px-1.5 py-0.5 rounded font-mono text-[13px]" {...props} />
   ),
 };
 
 function ShareButtons({ title, slug }: { title: string; slug: string }) {
-  const url = `https://novatechafrica.com/blog/${slug}`;
+  const url = `https://axelo.io/blog/${slug}`;
   const encodedUrl = encodeURIComponent(url);
   const encodedTitle = encodeURIComponent(title);
 
@@ -186,19 +186,19 @@ export function ArticleClient({ post, related }: { post: Post; related: PostMeta
         <div className="glass rounded-3xl p-10 md:p-14 border border-[#00FFB2]/20 relative overflow-hidden text-center">
           <div className="absolute inset-0 bg-gradient-to-br from-[#00FFB2]/5 to-transparent pointer-events-none" />
           <div className="relative z-10">
-            <span className="font-mono text-[10px] tracking-[0.28em] uppercase text-[#00FFB2] mb-4 block">
+            <span className="font-mono text-[10px] tracking-[0.28em] uppercase text-[#6366F1] mb-4 block">
               Work With Us
             </span>
             <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-[#F0F0FF] mb-3">
               Need help building this?
             </h2>
             <p className="text-[#8888AA] text-[15px] mb-8 max-w-md mx-auto leading-relaxed">
-              Nova Tech Africa builds the systems you just read about.
+              Axelo builds the high-performance systems you just read about.
               Let&apos;s talk about your project.
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-[#00FFB2] text-[#03000A] font-bold tracking-widest text-[12px] uppercase rounded-full hover:bg-[#F0F0FF] transition-all duration-300"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-[#6366F1] text-white font-bold tracking-widest text-[12px] uppercase rounded-full hover:bg-[#F0F0FF] hover:text-[#03000A] transition-all duration-300"
             >
               Let&apos;s Talk <ArrowRight className="w-4 h-4" />
             </Link>

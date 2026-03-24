@@ -6,13 +6,13 @@ import { ArrowLeft, ArrowRight, Calendar, Clock, Twitter, Linkedin, MessageCircl
 import type { Post, PostMeta } from "@/lib/mdx";
 
 const ACCENT_COLORS: Record<string, string> = {
-  "AI & ML": "#00FFB2",
-  Engineering: "#7B61FF",
+  "AI & ML": "#6366F1",
+  Engineering: "#6366F1",
   Product: "#FF6B35",
 };
 
 function ShareButtons({ title, slug }: { title: string; slug: string }) {
-  const url = `https://novatechafrica.com/blog/${slug}`;
+  const url = `https://axelo.io/blog/${slug}`;
   const encodedUrl = encodeURIComponent(url);
   const encodedTitle = encodeURIComponent(title);
 
@@ -131,18 +131,18 @@ export function ArticleShell({ post, related, children }: ArticleShellProps) {
         <div className="glass rounded-3xl p-10 md:p-14 border border-[#00FFB2]/20 relative overflow-hidden text-center">
           <div className="absolute inset-0 bg-gradient-to-br from-[#00FFB2]/5 to-transparent pointer-events-none" />
           <div className="relative z-10">
-            <span className="font-mono text-[10px] tracking-[0.28em] uppercase text-[#00FFB2] mb-4 block">
+            <span className="font-mono text-[10px] tracking-[0.28em] uppercase text-[#6366F1] mb-4 block">
               Work With Us
             </span>
             <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-[#F0F0FF] mb-3">
               Need help building this?
             </h2>
             <p className="text-[#8888AA] text-[15px] mb-8 max-w-md mx-auto leading-relaxed">
-              Nova Tech Africa builds the systems you just read about. Let&apos;s talk about your project.
+              Axelo builds the high-performance systems you just read about. Let&apos;s talk about your project.
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-[#00FFB2] text-[#03000A] font-bold tracking-widest text-[12px] uppercase rounded-full hover:bg-[#F0F0FF] transition-all duration-300"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-[#6366F1] text-white font-bold tracking-widest text-[12px] uppercase rounded-full hover:bg-[#F0F0FF] hover:text-[#03000A] transition-all duration-300"
             >
               Let&apos;s Talk <ArrowRight className="w-4 h-4" />
             </Link>

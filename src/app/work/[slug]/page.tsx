@@ -18,7 +18,7 @@ const CASE_STUDIES = {
   "hope-counseling": {
     title: "Hope Counseling",
     category: "Mental Health & Branding",
-    overview: "Hope Counseling & Support Services is a personal practice dedicated to supporting university students. The founder — a university student herself — approached Nova Tech Africa to create a digital home that felt safe, professional, and accessible to her peers.",
+    overview: "Hope Counseling & Support Services is a personal practice dedicated to supporting university students. The founder — a university student herself — approached Axelo to create a digital home that felt safe, professional, and accessible to her peers.",
     challenge: "The client needed a website that resonated with students while maintaining clinical professionalism. The challenge was to balance empathy with authority, ensuring the site was both welcoming and trustworthy.",
     solution: "We designed a 'serenity-first' interface using soft gradients and subtle animations. We implemented a streamlined contact system and resource hub to help students find immediate support. The project was delivered as a high-impact personal brand site that scales with her practice.",
     results: ["Direct Student Outreach Tool", "100% Mobile Responsive", "Launched in 2 Weeks"],
@@ -80,17 +80,17 @@ export default function CaseStudyPage({ params }: { params: Promise<{ slug: stri
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
           <div className="md:col-span-2 space-y-16">
             <section>
-              <h2 className="text-sm font-mono uppercase tracking-[0.3em] text-[#00FFB2] mb-6">Overview</h2>
+              <h2 className="text-sm font-mono uppercase tracking-[0.3em] text-[#6366F1] mb-6">Overview</h2>
               <p className="text-[#CCCCEE] text-xl leading-relaxed font-light">{study.overview}</p>
             </section>
 
             <section>
-              <h2 className="text-sm font-mono uppercase tracking-[0.3em] text-[#7B61FF] mb-6">The Challenge</h2>
+              <h2 className="text-sm font-mono uppercase tracking-[0.3em] text-[#6366F1] mb-6">The Challenge</h2>
               <p className="text-[#8888AA] text-lg leading-relaxed">{study.challenge}</p>
             </section>
 
             <section>
-              <h2 className="text-sm font-mono uppercase tracking-[0.3em] text-[#FF6B35] mb-6">The Solution</h2>
+              <h2 className="text-sm font-mono uppercase tracking-[0.3em] text-[#6366F1] mb-6">The Solution</h2>
               <p className="text-[#8888AA] text-lg leading-relaxed">{study.solution}</p>
             </section>
           </div>
@@ -125,7 +125,7 @@ export default function CaseStudyPage({ params }: { params: Promise<{ slug: stri
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link 
               href="/contact" 
-              className="inline-flex items-center gap-2 px-10 py-4 rounded-full bg-gradient-to-r from-[#00FFB2] to-[#7B61FF] text-[#03000A] font-bold text-sm tracking-widest uppercase hover:shadow-[0_0_30px_rgba(0,255,178,0.3)] transition-all duration-500"
+              className="inline-flex items-center gap-2 px-10 py-4 rounded-full bg-[#6366F1] text-white font-bold text-sm tracking-widest uppercase hover:shadow-[0_0_30px_rgba(99,102,241,0.3)] transition-all duration-500"
             >
               Let&apos;s talk <ArrowUpRight className="w-4 h-4" />
             </Link>
@@ -135,7 +135,7 @@ export default function CaseStudyPage({ params }: { params: Promise<{ slug: stri
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-10 py-4 rounded-full border text-sm font-bold tracking-widest uppercase transition-all duration-300"
-                style={{ borderColor: `${study.accent}50`, color: study.accent }}
+                style={{ borderColor: `#6366F150`, color: "#6366F1" }}
               >
                 View Live Site <ArrowUpRight className="w-4 h-4" />
               </a>

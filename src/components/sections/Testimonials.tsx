@@ -25,7 +25,7 @@ const testimonials = [
   {
     id: 2,
     quote:
-      "We'd worked with agencies in London and Dubai before. Nova Tech Africa matched that quality at a fraction of the cost, and they actually understood our African market context. The Aura Pay platform has processed over $12M in its first quarter.",
+      "We'd worked with agencies in London and Dubai before. Axelo matched that quality at a fraction of the cost, and they actually understood our African market context. The Aura Pay platform has processed over $12M in its first quarter.",
     name: "Amara Diallo",
     role: "CEO",
     company: "Aura Financial Technologies",

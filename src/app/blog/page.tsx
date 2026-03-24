@@ -7,9 +7,9 @@ import { BlogIndexClient } from "./BlogIndexClient";
 export const metadata: Metadata = {
   title: "Blog — Insights & Engineering Perspectives",
   description:
-    "Practical thinking on software engineering, AI development in Africa, SaaS platforms, and building products for Africa's digital economy. By Nova Tech Africa.",
+    "Practical thinking on software engineering, AI development in Africa, SaaS platforms, and building products for Africa's digital economy. By Axelo.",
   openGraph: {
-    title: "Insights & Engineering Perspectives | Nova Tech Africa",
+    title: "Insights & Engineering Perspectives | Axelo",
     description:
       "Practical thinking on software, AI, and building products for Africa's digital economy.",
     url: "https://novatechafrica.com/blog",

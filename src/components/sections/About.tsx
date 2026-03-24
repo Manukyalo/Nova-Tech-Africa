@@ -51,7 +51,7 @@ export const About = memo(() => (
           viewport={{ once: true, margin: "-10%" }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         >
-          <span className="font-mono text-[11px] tracking-[0.28em] uppercase text-[#00FFB2] mb-6 block">
+          <span className="font-mono text-[11px] tracking-[0.28em] uppercase text-[#6366F1] mb-6 block">
             Our Vision
           </span>
 
@@ -61,22 +61,18 @@ export const About = memo(() => (
             style={{ fontSize: "clamp(30px, 4vw, 56px)" }}
           >
             We are not a typical{" "}
-            <span className="text-gradient-mint">software agency.</span>
+            <span className="text-gradient-indigo">engineering studio.</span>
           </h2>
 
           <div className="space-y-5 text-[#8888AA] text-[15px] leading-[1.85] mb-10">
             <p>
-              We are an engineering studio obsessed with the craft of building products
-              that matter. Founded in Nairobi, built for the world — Nova Tech Africa
-              combines Silicon Valley-level engineering with a deep understanding of
-              Africa&apos;s unique digital landscape.
+              Axelo was born in the heart of Nairobi with a singular mission: to bridge the gap between ambitious ideas and high-performance reality. We aren&apos;t just a software studio; we are an acceleration engine for the next generation of digital giants.
             </p>
             <p>
-              Our team of <span className="text-[#F0F0FF] font-semibold">20+ engineers, designers, and AI specialists</span> has
-              delivered enterprise solutions for clients across{" "}
-              <span className="text-[#F0F0FF] font-semibold">
-                Kenya, Nigeria, South Africa, the UK, and the United States.
-              </span>
+              By combining Silicon Valley engineering standards with a deep understanding of the African tech landscape, we build systems that don&apos;t just work—they scale. From complex AI pipelines to immersive 3D web experiences, Axelo is where premium design meets absolute technical precision.
+            </p>
+            <p>
+              Our team of <span className="text-[#F0F0FF] font-semibold">elite engineers and strategists</span> works at the intersection of innovation and execution, ensuring that every line of code we write moves the needle for our clients globally.
             </p>
           </div>
 
